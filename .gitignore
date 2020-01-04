@@ -1,0 +1,54 @@
+# dotenv
+.env
+.env.backup
+.env.development
+.env.production
+.env.statging
+.env.test
+
+# editor
+.idea
+.vs
+*.code-workspace
+
+# npm
+/node_modules
+npm-debug.log
+
+# yarn
+yarn-error.log
+
+####
+# server side
+####
+
+# Laravel
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+
+####
+# client side
+####
+# nuxt
+.nuxt
+/dist
+/public/_nuxt
+
+# adsense
+ads.txt
+
+# image files
+/client/static/favicons
+/client/static/icon.png
+/client/static/android-chrome-*.png
+
+# @nuxtjs/pwa
+sw.*
+
+
