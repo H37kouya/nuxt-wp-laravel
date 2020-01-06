@@ -22,7 +22,13 @@ Nuxt×WP×Laravel is used site. but, I can't deploy
 
 ### WordPress設定
 
-~~ 後で書く。 ~~ 
+このアプリケーションはWordPressのAPIを拡張するために以下のプラグインを使っています。  
+
+[WUXT Headless WordPress API Extensions](https://wordpress.org/plugins/wuxt-headless-wp-api-extensions/)
+
+また、APIを確認する手段として、以下のプラグインを使うと簡単に確認できます。  
+
+[WP REST API Controller](https://ja.wordpress.org/plugins/wp-rest-api-controller/)
 
 ### Nuxt設定
 
@@ -36,4 +42,10 @@ Nuxt×WP×Laravel is used site. but, I can't deploy
 
 ## Laravel 機能
 
-パンくずリストの作成。WordPressのApiからカテゴリーとタグを抽出し、パンくずリストを作成します。
+### パンくずリストの作成
+
+WordPressのAPIからカテゴリーとタグを抽出し、パンくずリストを作成します。
+
+### サイトマップ用のjson作成
+
+WordPressのAPIをいろいろ叩いて、サイトマップ用のjsonを作成します。これを加工して、nuxtでサイトマップを作成しました。
