@@ -1,11 +1,17 @@
 <template>
-  <article id="sidebar" class="col-lg-3 pl-lg-0">
+  <article
+    id="sidebar"
+    class="col-lg-3 pl-lg-0"
+  >
     <div class="bg-info p-2 m-1 rounded">
       <section>
         <sidebar-header title="おすすめ記事" />
 
         <div class="pb-4 px-3 row">
-          <div v-for="(article, index) in articles" :key="index">
+          <div
+            v-for="(article, index) in articles"
+            :key="index"
+          >
             <card
               :title="article.title.rendered"
               :text="article.meta.description[0]"
@@ -23,7 +29,10 @@
 
     <div class="p-2">
       <div class="bg-danger py-4 rounded">
-        <router-link to="/articles" class="text-white h3">
+        <router-link
+          to="/articles"
+          class="text-white h3"
+        >
           <p class="text-center m-0">
             記事一覧へ!!
           </p>
@@ -49,7 +58,7 @@ export default {
     }
   },
 
-  async mounted() {
+  async created() {
     this.articles = await this.$wp.posts().perPage(5)
   },
 
