@@ -100,7 +100,7 @@ module.exports = {
       '@nuxtjs/google-adsense',
       {
         id: process.env.GOOGLE_ADSENSE,
-        pageLevelAds: true
+        pageLevelAds: false
         // analyticsUacct: process.env.GOOGLE_ANALYTICS, // アナリティクスと連携する場合のみ必要
         // analyticsDomainName: domain // アナリティクスと連携する場合のみ必要
       }
