@@ -12,12 +12,6 @@ Nuxt×WP×Laravel is used site. but, I can't deploy
 - WordPress 5.3
 - Laravel 6.X
 
-## 問題点
-
-このプロジェクトはレンタルサーバー(Xserver)では、アドセンス広告が通りません。しっかり検証していないので、長く動かせば通るかも。  
-それ以外はNuxtの機能でトップページ( https://over-hk.net のようなページ)がバグります。なぜだかわかりません。  
-そもそもトップページのみnuxtのMiddlewareを通過しませんので、Nuxtプロジェクト内部でリダイレクトが貼れません。
-
 ## 公開方法
 
 ### WordPress設定
