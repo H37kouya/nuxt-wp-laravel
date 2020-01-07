@@ -36,6 +36,12 @@ Nuxt×WP×Laravel is used site. but, I can't deploy
 
 ~~ 後で書く。 ~~ 
 
+```
+npm i -g pm2
+npm run build
+npm run start
+```
+
 ## Nuxt 機能
 
 ~~ 後で書く。 ~~ 
