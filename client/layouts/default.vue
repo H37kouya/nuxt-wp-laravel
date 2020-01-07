@@ -32,12 +32,6 @@ export default {
     hkFooter,
     hkHeader,
     hkSidebar
-  },
-
-  created() {
-    this.$router.push({
-      name: 'welcome',
-    })
   }
 }
 </script>

@@ -37,8 +37,8 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # トップページのみリダイレクト
-# RewriteCond %{REQUEST_URI} (^/$)
-# RewriteRule ^$ https://over-hk.net/home [R=301,L]
+RewriteCond %{REQUEST_URI} (^/$)
+RewriteRule ^$ https://over-hk.net/welcome [R=301,L]
 
 # localhost をリバースプロキシする
 RewriteCond %{HTTP_HOST} over-hk\.net
