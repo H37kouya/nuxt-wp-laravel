@@ -7,10 +7,7 @@
 
       <h2 class="bg-lightblue text-white p-2 rounded">おすすめ記事</h2>
 
-      <div
-        v-if="articles"
-        class="row"
-      >
+      <div v-if="articles" class="row">
         <category-card
           v-for="(article, index) in articles"
           :key="index"

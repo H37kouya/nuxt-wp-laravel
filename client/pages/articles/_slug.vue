@@ -16,11 +16,16 @@
           <div v-html="content"></div>
         </div>
       </div>
+
+      <div>
+        <adsense-horizontal />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import AdsenseHorizontal from '~/components/adsense/AdsenseHorizontal'
 import ArticleBreadcrumbes from '~/components/article/ArticleBreadcrumbs.vue'
 import ArticleIndex from '~/components/article/ArticleIndex.vue'
 import ArticleTime from '~/components/article/ArticleTime.vue'
@@ -31,6 +36,7 @@ export default {
   layout: 'article',
 
   components: {
+    AdsenseHorizontal,
     ArticleBreadcrumbes,
     ArticleIndex,
     ArticleTime,

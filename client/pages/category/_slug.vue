@@ -7,10 +7,7 @@
 
       <h2 class="bg-lightblue text-white p-2 rounded">おすすめ記事</h2>
 
-      <div
-        v-if="articles.length !== 0"
-        class="row"
-      >
+      <div v-if="articles.length !== 0" class="row">
         <category-card
           v-for="(article, index) in articles"
           :key="index"
@@ -26,11 +23,16 @@
           <p>記事が出来上がり次第、更新いたします。</p>
         </div>
       </div>
+
+      <div>
+        <adsense-horizontal />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import AdsenseHorizontal from '~/components/adsense/AdsenseHorizontal'
 import ArticleBreadcrumbes from '~/components/article/ArticleBreadcrumbs.vue'
 import CategoryCard from '~/components/category/CategoryCard.vue'
 
@@ -38,6 +40,7 @@ export default {
   layout: 'article',
 
   components: {
+    AdsenseHorizontal,
     ArticleBreadcrumbes,
     CategoryCard
   },
