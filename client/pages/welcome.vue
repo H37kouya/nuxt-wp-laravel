@@ -5,26 +5,25 @@
     <main-image />
 
     <div class="m-1 p-2 bg-white border border-secondary rounded">
-      <div
-        :id="articlesId"
-        class="articles"
-      >
+      <div :id="articlesId" class="articles">
         <h1>{{ title }}</h1>
 
         <article-index :article-index="index" />
 
-        <div
-          ref="content"
-          class="pt-2"
-        >
+        <div ref="content" class="pt-2">
           <div v-html="content"></div>
         </div>
+      </div>
+
+      <div>
+        <adsense-horizontal />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import AdsenseHorizontal from '~/components/adsense/AdsenseHorizontal'
 import ArticleBreadcrumbes from '~/components/article/ArticleBreadcrumbs.vue'
 import ArticleIndex from '~/components/article/ArticleIndex.vue'
 import CreateIndex from '~/src/Index/CreateIndex.js'
@@ -34,6 +33,7 @@ export default {
   layout: 'article',
 
   components: {
+    AdsenseHorizontal,
     ArticleBreadcrumbes,
     ArticleIndex,
     MainImage
