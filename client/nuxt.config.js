@@ -14,7 +14,10 @@ module.exports = {
     apiUrl: process.env.API_URL || process.env.APP_URL + '/api',
     appName: process.env.APP_NAME || 'Laravel Nuxt',
     appLocale: process.env.APP_LOCALE || 'en',
-    githubAuth: !!process.env.GITHUB_CLIENT_ID
+    githubAuth: !!process.env.GITHUB_CLIENT_ID,
+    adSlot1: process.env.GOOGLE_ADSENSE_SLOT1,
+    adSlot2: process.env.GOOGLE_ADSENSE_SLOT2,
+    adSlot3: process.env.GOOGLE_ADSENSE_SLOT3
   },
 
   head: {
